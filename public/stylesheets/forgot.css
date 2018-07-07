@@ -1,0 +1,98 @@
+#forgot-container {
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	display : none;
+	background : #000;
+	opacity : 0.2;
+	overflow: auto;
+}
+
+#forgot {
+	width : 500px;
+	height : 300px;
+	background: #f2f2f2;
+	position : fixed;
+	top : 250px;
+	left : 450px;
+	display : none;
+	z-index : 5555;
+	text-align : center;
+	border-radius : 5%;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	font-family: 'Product Sans';
+}
+
+#forgot ul {
+	list-style : none;
+}
+
+#forgot li {
+	margin-bottom : 10px;
+}
+
+#forgot input[type=text] ,#forgot input[type=password] , #forgot input[type=email] {
+    border : none;
+    border-bottom : 1px solid grey;
+    width : 83%;
+    margin-bottom : 20px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height : 40px;
+    padding-bottom: 0;
+    background-color : #f2f2f2;
+}
+
+#forgot input[type=submit] {
+    background: #58afe8;
+    background-image: -webkit-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: -moz-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: -ms-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: -o-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: linear-gradient(to bottom, #58afe8, #2bb8b1);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font: 16px 'Product Sans';/*Arial, Helvetica, sans-serif;*/
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#forgot input[type=submit]:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: -o-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: linear-gradient(to bottom, #3cb0fd, #34d99a);
+    text-decoration: none;
+    cursor : pointer;
+}
+
+#forgot span {
+	position : absolute;
+	top : 0px;
+	left : 450px;
+	color : blue;
+}
+
+#forgot span:hover {
+	text-decoration : underline;
+	cursor : pointer;
+}
+
+#forgot h4 {
+	margin-top : 86px;
+	margin-bottom: 25px;
+}
+
+#forgot-text {
+	color : #0B5DB6;
+}
+
+#forgot-text:hover {
+	text-decoration: underline;
+	cursor : pointer;
+}

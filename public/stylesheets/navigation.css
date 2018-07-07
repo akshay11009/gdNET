@@ -1,0 +1,47 @@
+#navigation-bar {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 60px;
+	background : yellow;
+	color : white;
+}
+
+#navigation-bar ul {
+	list-style: none;
+}
+
+#navigation-bar li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#logo-name {
+	position: absolute;
+	top : 10px;
+	left : 5px;
+}
+
+#middle-menu {
+	position: absolute;
+	top : 10px;
+	left : 40%;
+}
+
+#logo-name img {
+	position : absolute;
+	top : -5px;
+	left : 5px;
+	width : 70px;
+	height : 50px;
+	border-right : 1px solid white;
+}
+
+#logo-name span {
+	position : absolute;
+	top : -22px;
+	left : 90px;
+	font-family: thintel;
+	font-size : 3.5em;
+}

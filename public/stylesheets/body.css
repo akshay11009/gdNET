@@ -1,0 +1,95 @@
+#main_body {
+	position: absolute;
+	top : 60px;
+	left : 0;
+	height : 700px;
+	width : 100%;
+	background : url(../images/cover1.jpeg) no-repeat center;
+	background-size : cover;
+	font-family: 'Product Sans';
+}
+
+#text {
+	position : absolute;
+	top : 56px;
+	left : 36px;
+	height : 300px;
+	width : 300px;
+	font-size : 5em;
+}
+
+#login-form {
+	position : absolute;
+    top : 78px;
+    left : 1030px;
+    width : 300px;
+    height : 400px;
+    background : white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    border-radius : 20px;
+    background-color : #f2f2f2;
+    font-family: 'Product Sans';
+}
+
+#login-form ul {
+    list-style: none;
+}
+
+#login-form li {
+    margin-bottom : 10px;
+}
+
+#login-form input[type=text] , #login-form input[type=password] {
+    border : none;
+    border-bottom : 1px solid gray;
+    width : 100%;
+    margin-bottom : 20px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height : 40px;
+    padding-bottom: 0;
+    background-color : #f2f2f2;
+}
+
+#login-form input[type=submit] {
+    background: #58afe8;
+    background-image: -webkit-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: -moz-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: -ms-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: -o-linear-gradient(top, #58afe8, #2bb8b1);
+    background-image: linear-gradient(to bottom, #58afe8, #2bb8b1);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font: 16px 'Product Sans';/*Arial, Helvetica, sans-serif;*/
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#login-form input[type=submit]:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: -o-linear-gradient(top, #3cb0fd, #34d99a);
+    background-image: linear-gradient(to bottom, #3cb0fd, #34d99a);
+    text-decoration: none;
+    cursor : pointer;
+}
+
+#login-form form {
+    position : absolute;
+    left : 20px;
+    
+}
+
+#login-form a {
+    margin-top : 100px;
+}
+
+#login-form h1 {
+	margin-top: 30px;
+	margin-bottom : 15px;
+	font-size : 3rem;
+}
