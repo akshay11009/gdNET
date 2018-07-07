@@ -13,6 +13,7 @@
 
     * #####Install express-generator
             foo@bar:~$ npm install -g express-generator
+    <br/>
 
     * #####Then simply run the project
             foo@bar:~$ npm start
