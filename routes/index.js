@@ -64,6 +64,10 @@ router.get('/forgot' , function(req , res){
 	}); 
 });
 
+router.get('/user' , function(req , res , next){
+	res.render('profile' , {title: 'achha sa title'});
+});
+
 
 
 module.exports = router;
