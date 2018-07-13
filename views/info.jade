@@ -1,0 +1,12 @@
+extends layout
+
+
+block _info
+	h1 Select skills you are proficient in
+	div#info-container
+		h3(onclick="change(0)") Game Programmer
+		h3(onclick="change(1)") Game Designer
+		h3(onclick="change(2)") Game Artist
+		h3(onclick="change(3)") Engine Programmer
+		h3(onclick="change(4)") Physics Programmer
+		button(onclick = "sendSkills()") GO

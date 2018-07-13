@@ -1,0 +1,150 @@
+#header-profile {
+	position : absolute;
+	top : 0;
+	left : 0;
+	height : 80px;
+	width : 100%;
+	background : black;
+	color : white;
+}
+
+#header-profile ul {
+	list-style : none;
+}
+
+#header-profile li {
+	display : inline-block;
+	padding-right : 10px;
+}
+
+#header-profile-left {
+	position: absolute;
+	top : 25px;
+	left : 5%;
+}
+
+#header-profile-right {
+	position: absolute;
+	left : 85%;
+	top : 25px;
+}
+
+#body-profile {
+	position: absolute;
+	top : 140px;
+	left : 40px;
+	width : 97.1%;
+	height : 100px;
+	font-family : 'PT Sans Caption';
+}
+
+#body-profile-left {
+	width : 200px;
+}
+
+
+#body-profile-left h2 {
+	width:100%; text-align:center; border-bottom: 1px solid #bfc1bb; line-height:0.1em; margin:10px 0 20px 0; 
+	font-size : 10px;
+}
+
+#body-profile-left img {
+	margin-bottom : 20px;
+}
+
+#body-profile-left h2 span {
+	background:#fff; padding:0 10px;
+	color : #bfc1bb;
+}
+
+#body-profile-left ul  , #body-profile-mid ul {
+	margin : 0;
+	list-style : none;
+	padding : 0;
+}
+
+#body-profile-left li {
+	margin-right : 5px;
+	display : inline-block;
+}
+
+#skills li {
+	display : block;
+}
+
+#body-profile-left .cur {
+	float : right;
+	margin-right : 0;
+	font-size : 10px;
+	width : 70px;
+	height : 25px;
+	background : cyan;
+	padding-left : 11px;
+	padding-top : 5px;
+}
+
+#body-profile-left .info {
+	font-size : 10px;
+	margin-top : 12px;
+	color : grey;
+}
+
+#body-profile-mid {
+	position : absolute;
+	left : 270px;
+	top : 0;
+	width : 79.6%;
+	height : 500px;
+	color : #1c2838;
+}
+
+#body-profile-mid li {
+	display: inline-block;
+	padding-right : 20px;
+}
+
+.fa , .fa-map-marker {
+	font-size : 22px;
+	color : #bdbdbd;
+}
+
+#place {
+	color : #bdbdbd;
+	margin-left : -7px;
+}
+
+#body-profile-mid h2 {
+	width:90%; text-align:center; border-bottom: 1px solid #bfc1bb; line-height:0.1em; margin:30px 0 20px 0; 
+	font-size : 20px;
+}
+
+#body-profile-mid h2 span {
+	background:#fff; padding:0 10px;
+	color : #bfc1bb;
+}
+
+#about-basic li {
+	display  :block;
+	margin-top : 10px;
+	margin-bottom : 20px;
+}
+
+#body-profile-mid h6 , #score {
+	color : #5c95f2;
+}
+
+#about-basic h5 {
+	color : #bdbdbd;
+	text-decoration : underline;	
+}
+
+#collaborate-button {
+	position : absolute;
+	top : 10px;
+	right : 70px;
+	height : 30px;
+	width : 100px;
+	text-align :center;
+	background-color : #175ed1;
+}
+
