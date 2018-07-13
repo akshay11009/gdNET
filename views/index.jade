@@ -17,15 +17,14 @@ block _body
 				A cool tagline here.
 		div#login-form
 			h1 Login
-			form(action="/submit")
+			div#form-login
 				ul
 					li
-						input(type="text",placeholder="Username")
-							
+						input(type="text",placeholder="Username")			
 					li
 						input(type="password",placeholder="Password")
 					li
-						input(type="submit",value="Log in")
+						input(type="submit",value="Log in",onclick="login()")
 					li
 						span#forgot-text(onclick="makeVisible()") Forgot Password?
 					li

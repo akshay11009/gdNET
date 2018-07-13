@@ -78,7 +78,7 @@
     cursor : pointer;
 }
 
-#login-form form {
+#login-form #form-login {
     position : absolute;
     left : 20px;
     

@@ -3,16 +3,16 @@ extends layout
 block _signup
 	div#signup-container
 		h1 Register
-		form(action="/add")
-			ul
-				li
-					input(type="email",placeholder="E-mail")
-				li
-					input(type="text",placeholder="Username")
-				li 
-					input(type="password",placeholder="Password")
-				li
-					input(type="password",placeholder="Confirm Password")
-				li
-					input(type="submit",value="Register")
+		ul
+			li
+				input(type="email",placeholder="E-mail",required="")
+			li
+				input(type="text",placeholder="Username",required="")
+			li 
+				input(type="password",placeholder="Password",required="")
+			li
+				input(type="password",placeholder="Confirm Password",required="")
+			li
+				input(type="submit",value="Register" onclick = "signup();")
+		ul#error
 
