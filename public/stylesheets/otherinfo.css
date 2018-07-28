@@ -1,0 +1,132 @@
+#other-info {
+    width : 92%;
+    height : 760px;
+    background : cyan;
+    position : absolute;
+    top : 50px;
+    left : 50px;
+	background: #f2f2f2;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius : 3%;
+}
+
+#other-info-gender {
+    position : absolute;
+    top : 130px;
+    left : 294px;
+    width : 676px;
+    height : 59px;
+    text-align : center;
+}
+
+#other-info-gender h6 {
+    width : 50%;
+    height : 75%;
+    display : inline-block;
+    padding-top : 12px;
+    background-color : #c9fbff;
+    cursor : pointer;
+}
+
+#other-info-gender h6:nth-child(2) {
+    border-right : 1px solid white;
+}
+
+#other-info-gender h6: {
+    background-color : cyan;
+}
+
+#other-info-dob {
+    position : absolute;
+    left : 294px;
+    top : 247px; 
+    width : 676px;
+    height : 59px;
+    text-align : center;
+}
+
+#other-info input[type="date"] , #other-info input[type="text"] {
+    border : none;
+    border-bottom : 1px solid grey;
+    width : 100%;
+    margin-bottom : 20px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height : 40px;
+    padding-bottom: 0;
+    background-color : #f2f2f2;
+}
+
+#other-info-job {
+    position : absolute;
+    left : 294px;
+    top : 344px;
+    width : 676px;
+    height : 59px;
+    text-align : center;
+}
+
+#other-info-job h6 {
+    display : inline-block;    
+    width : 25%;
+    height : 75%;
+    background : #c9fbff;
+    border-right : 1px solid white;
+    cursor : pointer;
+    padding-top : 12px;
+} 
+
+#other-info-job h6:nth-child(5) {
+    border-right : none;
+}
+
+#other-info-name {
+    position : absolute;
+    left : 294px;
+    width : 676px;
+    height : 59px;
+    top : 55px;
+}
+
+#other-info-role {
+    position : absolute;
+    left : 294px;
+    top : 451px;
+    width : 676px;
+    height : 59px;
+}
+
+#other-info-place {
+    position : absolute;
+    left : 294px;
+    top : 570px;
+    width : 676px;
+    height : 59px;
+}
+
+#other-info-website {
+    position : absolute;
+    left : 294px;
+    top : 630px;
+    width : 676px;
+    height : 59px;
+}
+
+#other-info-next {
+    position: absolute;
+    left: 294px;
+    bottom: 0;
+    width: 676px;
+    height: 63px;
+    background: #c9fbff;
+    text-align: center;
+    border-radius : 20%;
+    cursor : pointer;
+}
+
+#other-info-next span {
+    font-size : 40px;
+}
+
+#other-info-next:hover {
+    background : #4fd0ff;
+}

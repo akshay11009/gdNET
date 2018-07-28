@@ -1,0 +1,28 @@
+extends layout 
+
+block _other
+    div#other-info
+        div#other-info-name
+            input(type="text",placeholder="Full Name")
+        div#other-info-gender
+            h5 Gender
+            h6(onclick='changeColor(0)') MALE
+            h6(onclick='changeColor(1)') FEMALE
+        div#other-info-dob
+            h5 Date Of Birth
+            input(type="date")
+        div#other-info-job
+            h5 Skills
+            h6(onclick="changeColorSkills(0)") Programmer
+            h6(onclick="changeColorSkills(1)") Designer
+            h6(onclick="changeColorSkills(2)") Artist
+            h6(onclick="changeColorSkills(3)") Business
+        div#other-info-role
+            input(type="text",placeholder="Your current role")
+            input(type="text",placeholder="Company")
+        div#other-info-place
+            input(type="text",placeholder="Where are you from?")
+        div#other-info-website
+            input(type="text",placeholder="Website")
+        div(onclick = 'sendData()')#other-info-next
+            span NEXT
