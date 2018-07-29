@@ -70,6 +70,7 @@
 
 #skills li {
 	display : block;
+    margin-bottom : 5px;
 }
 
 #body-profile-left .cur {
