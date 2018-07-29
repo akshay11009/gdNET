@@ -1,0 +1,45 @@
+body {
+    margin : 0;
+}
+
+#landing-container {
+    position : absolute;
+    width : 100%;
+    top : 120px;
+}
+
+.landing-event {
+    width : 100%;
+    height : 120px;
+    background : #c1d9ff;
+    position : absolute;
+    top : 0;
+    cursor : pointer;
+}
+
+.landing-event:hover {
+    background : #9fc3fc;
+}
+
+.landing-event div {
+    width: 25%;
+    height: 120px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.landing-event h3 {
+    position: absolute;
+    top: -30px;
+    left: 37%;
+    font-size: 3.5em;
+}
+
+.landing-event h5 {
+    position: absolute;
+    top: 10px;
+    right: 156px;
+    font-size: 1.5em;
+}

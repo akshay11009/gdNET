@@ -26,6 +26,10 @@ router.get('/user' , function(req , res , next){
 	res.render('profile');
 });
 
+router.get('/landing' , function(req , res , next) {
+    res.render('landing_login');
+});
+
 router.get('/login' , function(req , res_login) {
 	let credentials = JSON.parse(req.query.cred);
 	let coll = dbo.collection("users");
