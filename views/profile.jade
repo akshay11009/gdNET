@@ -1,54 +1,39 @@
-extends layout
+doctype html
+html
+    head
+        title User Page
+        script(src="/javascripts/dynamic_load.js")
+        link(rel="stylesheet",href="/stylesheets/profile.css")
+    body(onload='dynamic()')
+        div#header-profile
+            div#header-profile-left
+                ul
+                    li Logo
+            div#header-profile-right
+                ul
+                    li Contacts
+                    li Profile
+        div#body-profile
+            div#body-profile-left
+                img(src='/images/default.png',width='200px',height='200px')
+                div
+                h2
+                    span SKILLS
+                ul#skills
+            div#body-profile-mid
+                ul#info-name
+                h6
+                h3 Score : nil
+                h2
+                    span ABOUT
+                div#about-basic
+                    h5 Contact
+                    ul
+                        li E-mail : 
+                    ul
+                        li Birthday : 
+            div#collaborate-button
+                span Collaborate
+            
+                
 
-block _profile
-	div#header-profile
-		div#header-profile-left
-			ul
-				li Logo
-
-		div#header-profile-right
-			ul 
-				li My Contacts
-				li Profile
-	div#body-profile
-		div#body-profile-left
-			img(src="/images/profile_jethia.jpeg",width="200px",height="200px")
-			h2 
-				span WORK 
-			ul
-				li.job // Job
-				li.cur 
-					span CURRENT
-			p.info 
-			h2 
-				span SKILLS
-			ul#skills
-		div#body-profile-mid
-			ul#info-name
-				li 
-					h1 //name
-				li#marker
-					span.fa.fa-map-marker
-				li#place 
-					span#place //live
-			h6 // role
-			h3 Score : 
-				span#score 8.73
-			h2 
-				span ABOUT
-			div#about-basic
-				h5 Contact
-				ul
-					li E-mail : 
-						span 
-					li Site :
-						span 
-				h5 Basic Info
-				ul
-					li Birthday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						span 
-					li Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-						span 
-		div#collaborate-button
-			span Collaborate
-	

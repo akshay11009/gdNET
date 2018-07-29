@@ -91,6 +91,7 @@ function sendData() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
+            window.location.href = '/user?email=' + this.responseText;
         }
     };
     xhttp.open("POST",'/personal?obj=' + JSON.stringify(obj) , true);

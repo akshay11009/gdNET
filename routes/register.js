@@ -66,7 +66,7 @@ router.post('/personal' , function(req , res_skills) {
     coll.updateOne(query , new_values , function(err , res_update) {
         if(err) throw err;
         console.log('Updated');
-        res_skills.send('SUCCESS');
+        res_skills.send(email_id);
     });
 });
 

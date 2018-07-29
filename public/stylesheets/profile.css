@@ -76,11 +76,16 @@
 	float : right;
 	margin-right : 0;
 	font-size : 10px;
-	width : 70px;
-	height : 25px;
+	width : 60px;
+	height : 18px;
 	background : cyan;
 	padding-left : 11px;
 	padding-top : 5px;
+}
+
+#body-profile-left div ul {
+    position : relative;
+    top : -5px;
 }
 
 #body-profile-left .info {
@@ -131,6 +136,8 @@
 
 #body-profile-mid h6 , #score {
 	color : #5c95f2;
+    margin : auto;
+    font-size : 2em;
 }
 
 #about-basic h5 {

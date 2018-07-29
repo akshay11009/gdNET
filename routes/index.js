@@ -23,7 +23,7 @@ router.get('/info' , function(req , res , next){
 });
 
 router.get('/user' , function(req , res , next){
-	res.render('profile' , {title: 'achha sa title'});
+	res.render('profile');
 });
 
 router.get('/login' , function(req , res_login) {
