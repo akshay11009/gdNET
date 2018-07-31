@@ -4,7 +4,7 @@ const url = require('url');
 const nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
 const urldb = "mongodb://localhost:27017/userd";
-
+const globals = require('./globals.js');
 var dbo;
 
 MongoClient.connect(urldb , { useNewUrlParser: true } , function(err , db){
@@ -32,7 +32,9 @@ router.post('/confirm' , function(req , res_confirm) {
         name : '',
         role : '',
         place : '',
-        website : ''
+        website : '',
+        network : [],
+        requests : []
 	};
     email_id = user_obj.email;
 	coll.findOne({username : user_obj.username} , function(err_find , res_find) {
@@ -70,6 +72,7 @@ router.post('/personal' , function(req , res_skills) {
     });
 });
 
+
 router.get('/further' , function(req , res , next) {
     if(email_id == '')
         res.send('404 Not Found');
@@ -79,6 +82,8 @@ router.get('/further' , function(req , res , next) {
 
 router.get('/signup' , function(req , res , next){
     email_id = '';
+    globals.global_login = '1234';
+    console.log(globals.global_login);
 	res.render('signup' , {title: 'achha sa title'});
 });
 

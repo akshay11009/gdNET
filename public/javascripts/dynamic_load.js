@@ -26,6 +26,11 @@ function render_user(obj) {
     elem.innerHTML = '';
     if(obj.birthday != '')
         elem.innerHTML = '<li>Birthday :' + obj.birthday + '</li>';
+    elem = document.getElementById('collaborate-button').getElementsByTagName('span')[0];
+    if(obj.email == sessionStorage.getItem("global_login"))
+        elem.innerHTML = "Organize";
+    else
+        elem.innerHTML = "Collaborate";
 }
 
 
@@ -43,4 +48,9 @@ function dynamic() {
     };
     xhttp.open("POST",'/request_info?email=' + email , true);
     xhttp.send();
+}
+
+function navigate_to_connection() {
+    console.log(window.location.search);
+    window.location.href = '/network' + window.location.search; 
 }

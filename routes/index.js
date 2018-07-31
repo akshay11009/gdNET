@@ -4,7 +4,7 @@ const url = require('url');
 const nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
 const urldb = "mongodb://localhost:27017/userd";
-
+const globals = require('./globals.js');
 
 var dbo;
 
@@ -23,11 +23,20 @@ router.get('/info' , function(req , res , next){
 });
 
 router.get('/user' , function(req , res , next){
+    console.log(globals.global_login);
 	res.render('profile');
+});
+
+router.get('/requests' , function(req , res , next) {
+    res.render('request');
 });
 
 router.get('/landing' , function(req , res , next) {
     res.render('landing_login');
+});
+
+router.get('/network' , function(req , res , next) {
+    res.render('connections');
 });
 
 router.get('/login' , function(req , res_login) {
@@ -36,7 +45,7 @@ router.get('/login' , function(req , res_login) {
 	coll.findOne(credentials , function(err_find , res_find){
 		if(res_find) {
 			console.log('success');
-			res_login.send('SUCCESS');
+			res_login.send(res_find.email);
 		}
 		else {
 			console.log('fail');

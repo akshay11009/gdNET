@@ -4,6 +4,7 @@ html
         title User Page
         script(src="/javascripts/dynamic_load.js")
         script(src="/javascripts/eventdb.js")
+        script(src="/javascripts/request.js")
         link(rel="stylesheet",href="/stylesheets/profile.css")
         link(rel="stylesheet",href="/stylesheets/addevent.css")
     body(onload='dynamic()')
@@ -13,8 +14,8 @@ html
                     li Logo
             div#header-profile-right
                 ul
-                    li Contacts
-                    li Profile
+                    li(onclick='navigate_to_connection() ') Contacts
+                    li(onclick='navigate_to_requests()') Profile
         div#body-profile
             div#body-profile-left
                 img(src='/images/default.png',width='200px',height='200px')
@@ -34,7 +35,7 @@ html
                         li E-mail : 
                     ul
                         li Birthday : 
-            div(onclick='make_event()')#collaborate-button
+            div(onclick='coll_clicked()')#collaborate-button
                 span Organize 
     div(onclick='reset_event()')#container-event
     div#container-add-event

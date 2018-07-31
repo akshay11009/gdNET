@@ -30,6 +30,13 @@ function load_page() {
     xhttp.send();
 }
 
+function coll_clicked() {
+    console.log("Here");
+    if(document.getElementById("collaborate-button").getElementsByTagName('span')[0].innerHTML == "Organize")
+        make_event();
+    else
+        send_user_request();
+}
 function make_event() {
     document.getElementById('container-event').style.display = "block";
     document.getElementById('container-add-event').style.display = "block";
@@ -59,6 +66,23 @@ function submit_event() {
     xhttp.open("POST" , "/submit_event?ev_obj=" + JSON.stringify(obj) , true);
     xhttp.send();
 }
+
+function send_user_request() {
+    let obj = {
+        sender :  sessionStorage.getItem("global_login"),
+        receiver : window.location.search.substring(7) 
+    };
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            
+        }
+    }
+
+    xhttp.open("POST" , "/add_connection?obj=" + JSON.stringify(obj) , true);
+    xhttp.send();
+}
+
 
 function landing_event(index) {
     let xhttp = new XMLHttpRequest();

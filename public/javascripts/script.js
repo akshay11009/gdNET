@@ -24,8 +24,10 @@ function login() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       console.log(this.responseText);
-      if(this.responseText === 'SUCCESS')
-        window.location.href = '/user';
+      if(this.responseText != 'FAIL' ) {
+            window.location.href = '/user?email=' + this.responseText;
+            sessionStorage.setItem("global_login" , this.responseText);
+      }
       else {
         elms[0].style.borderColor = elms[1].style.borderColor = 'red';
       }
@@ -33,5 +35,4 @@ function login() {
   };
   xhttp.open("GET",'/login?cred=' + JSON.stringify(jsonObj), true);
   xhttp.send();
-
 }
