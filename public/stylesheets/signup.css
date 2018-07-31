@@ -20,7 +20,7 @@
 	list-style: none;
 }
 
-#signup-container input[type=text] ,#signup-container input[type=password] , #signup-container input[type=email] {
+#signup-container input[type=text] ,#signup-container input[type=password] , #signup-container input[type=email] , #container-add-event input[type=text]{
     border : none;
     border-bottom : 1px solid grey;
     width : 83%;
@@ -57,3 +57,4 @@
     text-decoration: none;
     cursor : pointer;
 }
+

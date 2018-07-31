@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var passResetRouter = require('./routes/pass_reset.js'); 
 var registerRouter = require('./routes/register.js');
 var renderRouter = require('./routes/render_user.js');
-
+var eventRouter = require('./routes/eventdb.js');
 var app = express();
 
 // view engine setup
@@ -27,6 +27,7 @@ app.use('/users', usersRouter);
 app.use(passResetRouter);
 app.use(registerRouter);
 app.use(renderRouter);
+app.use(eventRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -3,7 +3,9 @@ html
     head
         title User Page
         script(src="/javascripts/dynamic_load.js")
+        script(src="/javascripts/eventdb.js")
         link(rel="stylesheet",href="/stylesheets/profile.css")
+        link(rel="stylesheet",href="/stylesheets/addevent.css")
     body(onload='dynamic()')
         div#header-profile
             div#header-profile-left
@@ -32,8 +34,22 @@ html
                         li E-mail : 
                     ul
                         li Birthday : 
-            div#collaborate-button
-                span Collaborate
+            div(onclick='make_event()')#collaborate-button
+                span Organize 
+    div(onclick='reset_event()')#container-event
+    div#container-add-event
+        ul
+            li
+                input(type="text",placeholder="Event's Name")
+            li
+                input(type="text",placeholder="Event's Website")
+            li
+                input(type="text",placeholder="Image Link")
+            li
+                span Event Date&nbsp;&nbsp;
+                input(type="date")
+            li
+                button(onclick='submit_event()') Submit
             
                 
 

@@ -1,11 +1,7 @@
 html
     head
         title Events
-        script(src="/javascripts/landing.js")
+        script(src="/javascripts/eventdb.js")
         link(rel="stylesheet",href="/stylesheets/landing.css")
-    body
+    body(onload = 'load_page()')
         div#landing-container
-            div.landing-event
-                div
-                h3 Ludum Dare
-                h5 Participants : 

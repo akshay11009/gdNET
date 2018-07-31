@@ -36,6 +36,7 @@
 	width : 97.1%;
 	height : 100px;
 	font-family : 'PT Sans Caption';
+    z-index : 0;
 }
 
 #body-profile-left {
