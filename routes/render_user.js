@@ -33,8 +33,9 @@ router.post('/search_user' , function(req , res) {
             result : []
         };
         for(let i = 0 ; i < res_find.length ; i++) {
-            let cur_string = res_find[i].username;
-            if(cur_string.indexOf(query) != -1) {
+            let cur_string = res_find[i].email;
+            console.log('-------->' + cur_string);
+            if(cur_string != undefined && cur_string.indexOf(query) != -1) {
                 result.result.push({name : res_find[i].name , email : res_find[i].email});
             }
         }

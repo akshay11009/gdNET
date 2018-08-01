@@ -29,6 +29,7 @@ function render_search(arr) {
         inner.setAttribute("onclick" , "to_user_search(" + i + ");");
         inner.getElementsByTagName('span')[0].innerHTML = arr[i].name;
         inner.getElementsByTagName('h1')[0].innerHTML = arr[i].email;
+        inner.getElementsByTagName('div')[0].style.background = "url(../images/default.png) no-repeat center";
     }
 }
 

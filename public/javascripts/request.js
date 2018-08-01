@@ -70,5 +70,8 @@ function navigate_to_home() {
 }
 
 function navigate_to_requests() {
-    window.location.href = '/requests';
+    if((window.location.href).indexOf("requests") != -1)
+        window.location.href = '/user?email=' + sessionStorage.getItem("global_login");
+    else
+        window.location.href = "/requests";
 }
