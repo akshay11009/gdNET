@@ -6,16 +6,10 @@ html
         script(src="/javascripts/eventdb.js")
         script(src="/javascripts/request.js")
         link(rel="stylesheet",href="/stylesheets/profile.css")
-        link(rel="stylesheet",href="/stylesheets/addevent.css")
+        link(rel="stylesheet",href="/stylesheets/header.css")
+        link(rel="stylesheet",href="/stylesheets/addevent.css") 
     body(onload='dynamic()')
-        div#header-profile
-            div#header-profile-left
-                ul
-                    li Logo
-            div#header-profile-right
-                ul
-                    li(onclick='navigate_to_connection() ') Contacts
-                    li(onclick='navigate_to_requests()') Profile
+        include ./header
         div#body-profile
             div#body-profile-left
                 img(src='/images/default.png',width='200px',height='200px')

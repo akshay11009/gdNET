@@ -3,7 +3,9 @@ html
         title Connections
         script(src="/javascripts/connection.js")
         link(rel="stylesheet",href="/stylesheets/connection.css")
+        link(rel="stylesheet",href="/stylesheets/header.css")
     body(onload='load_connections()')
+        include ./header.jade
         div#connections
             //div.connection-div
                 div

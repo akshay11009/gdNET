@@ -3,6 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet',href='/stylesheets/style.css')
+    link(rel="stylesheet",href='/stylesheets/header.css')
     link(rel='stylesheet',href='/stylesheets/navigation.css')
     link(rel='stylesheet',href='/stylesheets/body.css')
     link(rel='stylesheet',href="/stylesheets/signup.css")
@@ -19,7 +20,7 @@ html
     link(rel='stylesheet',href="/stylesheets/res.css")
     link(rel='stylesheet',href="/stylesheets/otherinfo.css")
   body
-    block _header
+    include ./header.jade
     block _body
     block _forgot
     block _signup

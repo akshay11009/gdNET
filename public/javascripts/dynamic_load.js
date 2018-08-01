@@ -46,11 +46,32 @@ function dynamic() {
             render_user(JSON.parse(this.responseText));
         }
     };
+    document.getElementById("header-right").style.display = "block";
+    document.getElementById("logo").style.top = "-49px";
+    if((window.location.search).substring(7) == sessionStorage.getItem("global_login"))
+        document.getElementById('header-right-prof').innerHTML = 'Requests';
+    else
+        document.getElementById('header-right-prof').innerHTML = 'Profile';
     xhttp.open("POST",'/request_info?email=' + email , true);
     xhttp.send();
 }
 
-function navigate_to_connection() {
+function navigate_to_connections() {
     console.log(window.location.search);
     window.location.href = '/network' + window.location.search; 
+}
+
+function navigate_to_home() {
+    window.location.href = "/landing";
+}
+
+function navigate_to_requests() {
+    let string = document.getElementById("header-right-prof").innerHTML;
+    console.log(string);
+    if(string == "Profile") {
+        window.location.href = '/user' + window.location.search;
+    }
+    else {
+        window.location.href = '/requests';
+    }
 }

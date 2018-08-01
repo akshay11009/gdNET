@@ -1,0 +1,60 @@
+body {
+    margin : 0;
+}
+
+#header {
+    position : absolute;
+    top : 0;
+    width : 100%;
+    height : 80px;
+    background : #c6ffff;
+}
+
+#header #logo {
+    position: absolute;
+    top: -11px;
+    left: 65px;
+}
+
+#header #logo h2 {
+    font-family : thintel; 
+    font-size : 5em;
+    cursor : pointer;
+}
+
+#header #logo h2:hover {
+    color : red;
+}
+
+#header #header-right {
+    position: absolute;
+    top: 8px;
+    right: 105px;
+    display : none;
+}
+
+#header #header-right {
+    font-family : monaco;
+}
+
+#header-right #header-right-net {
+    position: absolute;
+    top: 0;
+    left: -238px;
+    text-decoration : underline;
+    background : orange;
+    cursor : pointer;
+}
+
+#header-right #header-right-prof {
+    position: absolute;
+    top: 0;
+    left: -62px;
+    text-decoration : underline;
+    background : orange;
+    cursor : pointer;
+}
+
+#header-right #header-right-prof:hover , #header-right #header-right-net:hover {
+    background : blue;
+}

@@ -25,7 +25,9 @@ function load_page() {
         if(this.readyState == 4 && this.status == 200) 
             render_event_page(JSON.parse(this.responseText).result);
     }
-
+    document.getElementById('logo').style.top = "-49px";
+    document.getElementById('header-right-prof').innerHTML = 'Profile';
+    document.getElementById('header-right').style.display = "block";
     xhttp.open("POST",'/request_events',true);
     xhttp.send();
 }
@@ -89,9 +91,26 @@ function landing_event(index) {
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             let website = JSON.parse(this.responseText).result[index].ev_website; 
-            window.location.href = 'https://www.' + website;
+            window.location.href =  website;
         }
     }
     xhttp.open("POST" , "/request_events",true);
     xhttp.send();
+}
+
+function navigate_to_home() {
+    window.location.href = "/landing";
+}
+
+function navigate_to_connections() {
+    console.log('here');
+    window.location.href = "/network?email=" + sessionStorage.getItem("global_login");
+}
+
+function navigate_to_requests() {
+    console.log('alallalalalal');
+    if(document.getElementById('header-right-prof').innerHTML == "Profile")
+        window.location.href = "/user?email?" + sessionStorage.getItem("global_login");
+    else
+        window.location.href = '/requests';
 }

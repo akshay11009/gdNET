@@ -3,7 +3,10 @@ html
         title Requests
         script(src="/javascripts/request.js")
         link(rel="stylesheet",href="/stylesheets/request.css")
+        link(rel="stylesheet",href="/stylesheets/header.css")
+        link(rel="stylesheet",href="/stylesheets/header.js")
     body(onload = "load_requests()")
+        include ./header.jade
         div#container-request
             //div.request-content
                 div

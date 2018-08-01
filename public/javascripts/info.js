@@ -92,6 +92,7 @@ function sendData() {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
             window.location.href = '/user?email=' + this.responseText;
+            sessionObject.setItem("global_login",this.responseText);
         }
     };
     xhttp.open("POST",'/personal?obj=' + JSON.stringify(obj) , true);

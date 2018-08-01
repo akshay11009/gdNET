@@ -1,10 +1,10 @@
 #main_body {
 	position: absolute;
-	top : 60px;
+	top : 80px;
 	left : 0;
 	height : 700px;
 	width : 100%;
-	background : url(../images/cover1.jpeg) no-repeat center;
+	background : url(../images/index.jpeg) no-repeat center;
 	background-size : cover;
 	font-family: 'Product Sans';
 }

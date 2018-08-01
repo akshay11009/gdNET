@@ -112,7 +112,7 @@ router.post('/add_to_connection' , function(req , res) {
         if(obj.flag == 1) {
             coll.findOne({email: obj.receiver} , function(err_find , res_find) {
                 if(err_find) throw err_find;
-                coll.findOne({email: obj.receiver} , function(err_findRec , res_findRes) {
+                coll.findOne({email: obj.sender} , function(err_findRec , res_findRes) {
                     if(err_findRec) throw err_findRec
                     res_find.network.push({name: res_findRes.name , role: res_findRes.role , email: res_findRes.email});
                     let updatedVal = {$set : {network: res_find.network}};

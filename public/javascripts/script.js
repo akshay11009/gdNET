@@ -36,3 +36,4 @@ function login() {
   xhttp.open("GET",'/login?cred=' + JSON.stringify(jsonObj), true);
   xhttp.send();
 }
+
