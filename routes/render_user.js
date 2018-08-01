@@ -24,6 +24,24 @@ router.post('/request_info',function(req , res) {
     });
 });
 
+router.post('/search_user' , function(req , res) {
+    let coll = dbo.collection('users');
+    let query = req.query.query;
+    coll.find({}).toArray(function(err_find , res_find) {
+        if(err_find) throw err_find;
+        let result = {
+            result : []
+        };
+        for(let i = 0 ; i < res_find.length ; i++) {
+            let cur_string = res_find[i].username;
+            if(cur_string.indexOf(query) != -1) {
+                result.result.push({name : res_find[i].name , email : res_find[i].email});
+            }
+        }
+        res.send(JSON.stringify(result));
+    });
+});
+
 MongoClient.connect(urldb , { useNewUrlParser: true } , function(err , db){
 	if(err)
 		throw err;

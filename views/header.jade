@@ -1,7 +1,15 @@
 div#header
     div#logo
         h2(onclick="navigate_to_home()") gdNET
+    div#search
+        input(type="text",placeholder="Search for a person")
+        button(onclick="fetch_query()") Go
     div#header-right
         h2(onclick="navigate_to_connections()")#header-right-net Network
         h2(onclick="navigate_to_requests()")#header-right-prof Requests
+div#search-results
+    //div.fetched-results
+        //div
+        //span name
+        //h1 email
 

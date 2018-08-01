@@ -19,8 +19,10 @@ function load_requests() {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
-            render_request_page(JSON.parse(this.responseText).result);
+            if(sessionStorage.getItem("global_login"))
+                render_request_page(JSON.parse(this.responseText).result);
+            else
+                window.location.href = '/';
         }
     }
     document.getElementById('logo').style.top = "-49px";

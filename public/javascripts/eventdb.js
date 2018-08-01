@@ -22,8 +22,12 @@ function load_page() {
     console.log('Here');
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200) 
-            render_event_page(JSON.parse(this.responseText).result);
+        if(this.readyState == 4 && this.status == 200) {
+            if(sessionStorage.getItem("global_login"))
+                render_event_page(JSON.parse(this.responseText).result);
+            else
+                window.location.href = '/';
+        }
     }
     document.getElementById('logo').style.top = "-49px";
     document.getElementById('header-right-prof').innerHTML = 'Profile';

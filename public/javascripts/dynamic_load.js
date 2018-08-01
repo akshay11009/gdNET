@@ -1,4 +1,5 @@
 function render_user(obj) {
+
     let elem;
     if(obj.work != '') {
         elem = document.getElementById('body-profile-left').getElementsByTagName('div')[0];
@@ -43,7 +44,10 @@ function dynamic() {
     xhttp=new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            render_user(JSON.parse(this.responseText));
+            if(sessionStorage.getItem("global_login"))
+                render_user(JSON.parse(this.responseText));
+            else
+                window.location.href = '/';
         }
     };
     document.getElementById("header-right").style.display = "block";
