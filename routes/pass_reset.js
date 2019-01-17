@@ -31,8 +31,8 @@ router.get('/forgot' , function(req , res){
 	var transporter = nodemailer.createTransport({
   		service: 'gmail',
 		auth: {
-   		user: 'jksprt0@gmail.com', // enter gmail id here
-   		pass: '31march1998' // enter password here
+   		user: '', // enter gmail id here
+   		pass: '' // enter password here
   		}
 	});
 		//console.log(randomCode);
